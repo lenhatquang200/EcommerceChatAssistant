@@ -1,0 +1,52 @@
+modules = ["java"]
+
+[nix]
+channel = "stable-24_05"
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Android App"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "android_app_run"
+
+[[workflows.workflow]]
+name = "Android App"
+author = "agent"
+
+[workflows.workflow.metadata]
+agentRequireRestartOnSave = false
+
+[[workflows.workflow.tasks]]
+task = "packager.installForAll"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "./gradlew assembleDebug && ./gradlew installDebug && adb shell am start -n com.example.ecommerce/.SplashActivity"
+waitForPort = 5000
+
+[[workflows.workflow]]
+name = "android_app_run"
+author = "agent"
+
+[workflows.workflow.metadata]
+agentRequireRestartOnSave = false
+
+[[workflows.workflow.tasks]]
+task = "packager.installForAll"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "./gradlew installDebug && adb shell am start -n com.example.ecommerce/.SplashActivity"
+
+[deployment]
+run = ["sh", "-c", "./gradlew assembleDebug && ./gradlew installDebug && adb shell am start -n com.example.ecommerce/.SplashActivity"]

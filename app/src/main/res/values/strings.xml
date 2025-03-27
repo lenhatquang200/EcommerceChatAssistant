@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">E-commerce</string>
+    
+    <!-- Navigation -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    
+    <!-- Main Activity -->
+    <string name="categories">Categories</string>
+    <string name="featured_products">Featured Products</string>
+    <string name="search_products">Search products</string>
+    <string name="your_one_stop_shop">Your one-stop shop</string>
+    
+    <!-- Product List -->
+    <string name="no_products_available">No products available</string>
+    <string name="no_search_results">No results found for \"%1$s\"</string>
+    
+    <!-- Product Detail -->
+    <string name="product_image">Product Image</string>
+    <string name="description">Description</string>
+    <string name="quantity">Quantity</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="add_to_cart">Add to Cart</string>
+    
+    <!-- Cart -->
+    <string name="cart">Cart</string>
+    <string name="your_cart_is_empty">Your cart is empty</string>
+    <string name="total">Total</string>
+    <string name="clear_cart">Clear Cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="remove_item">Remove Item</string>
+    
+    <!-- Checkout -->
+    <string name="order_summary">Order Summary</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="shipping">Shipping</string>
+    <string name="tax">Tax</string>
+    <string name="shipping_information">Shipping Information</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="zip_code">ZIP Code</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="paypal">PayPal</string>
+    <string name="cash_on_delivery">Cash on Delivery</string>
+    <string name="place_order">Place Order</string>
+    
+    <!-- Chat -->
+    <string name="chat_with_support">Chat with Support</string>
+    <string name="type_a_message">Type a message…</string>
+    <string name="send">Send</string>
+    
+    <!-- Misc -->
+    <string name="app_logo">App Logo</string>
+    <string name="category_icon">Category Icon</string>
+    
+    <!-- Menu -->
+    <string name="action_search">Search</string>
+    <string name="action_cart">Cart</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_categories">Categories</string>
+    <string name="nav_cart">Cart</string>
+    <string name="nav_chat">Customer Support</string>
+</resources>
